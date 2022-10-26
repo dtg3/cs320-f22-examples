@@ -1,0 +1,35 @@
+/* This file will contain all the styling for our demo */
+
+/*
+    CSS rules our outlined like this
+    [Selector] {property:value; property:value;}
+
+    The rule below says for all p tags, change the font
+    to arial and the color to a dark grey
+*/
+p {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    You can also select specific item in your document
+    in a variety of ways.
+*/
+
+/* id Selector */
+#site-heading {
+    text-align: center;
+    color:blueviolet;
+}
+
+/* class Selector */
+.red-text {
+    color:red;
+}
+
+/* id and class selector */
+img.resize {
+    width:20%;
+    height:20%;
+}
