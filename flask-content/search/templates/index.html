@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block imports %}
+<script type="text/javascript" defer src="{{ url_for('static', filename='js/search.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<h1>Examples:</h1>
+<label for="pokesearch">Search:</label>
+<input type="text" name="pokesearch" id="pokesearch">
+<ul id="pokelist">
+    {% for name in pokemon %}
+    <li>{{ name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
